@@ -8,3 +8,12 @@ Napisz program, który powie Ci czy dany uczestnik może skorzystać z nowej atr
 
 Program zapyta użytkownika o jego wiek i wzrost, a następnie wyświetli komunikat, czy wolno mu skorzystać z atrakcji.
 """
+
+wiek = int(input("Podaj wiek: "))
+wzrost = int(input("Podaj wzrost [cm]: "))
+
+# if wiek >= 12 and wzrost >= 130 and wzrost <= 195:
+if wiek >= 12 and 130 <= wzrost <= 195:
+    print("Możesz skorzystać z rollercoaster'a")
+else:
+    print("Nie możesz skorzystać z rollercoaster'a")

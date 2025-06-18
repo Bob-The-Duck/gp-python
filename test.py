@@ -1,2 +1,1 @@
-float("6")
-float("5.34")
+print(bool(0))
