@@ -11,3 +11,16 @@ Wykonaj poniższe kroki:
   - jeśli tak: wyświetl komunikat: "Poprawnie zalogowano"
   - jeśli nie: wyświetl komunikat: "Niepoprawny login lub hasło"
 """
+
+import getpass
+
+LOGIN = "gigant@trener.pl"
+HASLO = "qwerty"
+
+login = input("Podaj login: ")
+hasło = getpass.getpass("Podaj hasło: ")
+
+if login == LOGIN and hasło == HASLO:
+    print("Zalogowałeś się na swoję konto")
+else:
+    print("Nie udało ci się zalogować")
