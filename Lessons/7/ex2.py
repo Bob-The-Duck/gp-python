@@ -10,3 +10,14 @@ time.sleep(1) # wstrzymujemy działanie programu na 1 sekundę
 ```
 
 """
+
+import time
+
+liczba = int(input("Nastaw bombę: "))
+
+while liczba > 0:
+    print(f"{liczba}")
+    time.sleep(1)
+    liczba -= 1
+    
+print("BOOM!")
