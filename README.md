@@ -38,7 +38,7 @@ Aby uruchomić projekty, wykonaj następujące kroki:
 2.  **Przejdź do Katalogu Repozytorium:**
 
     ```bash
-    cd gp-python
+    cd gp-python/Giganci programowania
     ```
 
 3.  **Zainstaluj Zależności (jeśli istnieją):**
