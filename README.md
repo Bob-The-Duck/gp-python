@@ -8,11 +8,11 @@ To repozytorium zawiera moje projekty napisane w Pythonie, które stworzyłem po
 
 ## Spis Treści
 
-  * [Opis](https://www.google.com/search?q=%23opis)
-  * [Jak Uruchomić Projekty](https://www.google.com/search?q=%23jak-uruchomi%C4%87-projekty)
-  * [Wymagania i Zależności](https://www.google.com/search?q=%23wymagania-i-zale%C5%BCno%C5%9Bci)
-  * [Technologie](https://www.google.com/search?q=%23technologie)
-  * [Licencja](https://www.google.com/search?q=%23licencja)
+  * [Opis](https://github.com/Bob-The-Duck/gp-python/blob/master/README.md#spis-tre%C5%9Bci)
+  * [Jak Uruchomić Projekty](https://github.com/Bob-The-Duck/gp-python/blob/master/README.md#spis-tre%C5%9Bci)
+  * [Wymagania i Zależności](https://github.com/Bob-The-Duck/gp-python/blob/master/README.md#spis-tre%C5%9Bci)
+  * [Technologie](https://github.com/Bob-The-Duck/gp-python/blob/master/README.md#spis-tre%C5%9Bci)
+  * [Licencja](https://github.com/Bob-The-Duck/gp-python/blob/master/README.md#spis-tre%C5%9Bci)
 
 -----
 
@@ -71,7 +71,7 @@ Aby uruchomić projekty, wykonaj następujące kroki:
 
 ## Wymagania i Zależności
 
-Do uruchomienia projektów wymagany jest zainstalowany **Python 3.x**.
+Do uruchomienia projektów wymagany jest zainstalowany **Python 3.x** najlepiej najnowszą wersje (Chociaż sam używam 3.11.x).
 Poszczególne projekty mogą wymagać dodatkowych bibliotek, które będą wymienione w pliku `requirements.txt` w odpowiednim folderze projektu lub w opisie konkretnego projektu.
 
 -----
