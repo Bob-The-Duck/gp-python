@@ -1,1 +1,4 @@
-print(1 in [1,2,3])
+def powitanie(imie="Bartek"):
+    print(f"Hej {imie}")
+
+powitanie("Filip")
