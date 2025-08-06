@@ -13,3 +13,11 @@ oblicz_wysokosc(16, 9, 1920) -> 16:9 -> 1920 x 1080
 oblicz_wysokosc(16, 9, 1280) -> 16:9 -> 1280 x 720
 oblicz_wysokosc(4, 3, 1920) -> 4:3 -> 1920 x 1440
 """
+
+def oblicz_wysokosc(proporcje_szerokosc, proporcje_wysokosc, piksele_szerokosc):
+    y = piksele_szerokosc * proporcje_wysokosc / proporcje_szerokosc
+    return int(y)
+
+print(oblicz_wysokosc(16, 9, 1920))
+print(oblicz_wysokosc(16, 9, 1280))
+print(oblicz_wysokosc(4, 3, 1920))
