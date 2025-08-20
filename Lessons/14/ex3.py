@@ -11,3 +11,10 @@ Wyświetl wynik jako komunikat:
 "Pole trójkąta o podstawie XX oraz wysokości XX wynosi XX"
 Zamiast "XX" powinny pojawić się wartości liczbowe.
 """
+
+podstawa_trojkata = float(input("Podaj długość podstawy trójkąta [cm]: "))
+wysokosc_trojkata = float(input("Podaj wysokość trójkąta [cm]: "))
+
+pole_trojkata = podstawa_trojkata * wysokosc_trojkata / 2
+
+print(f"Pole trójkąta o podstawie {podstawa_trojkata} oraz wysokości {wysokosc_trojkata} wynosi {pole_trojkata}")
