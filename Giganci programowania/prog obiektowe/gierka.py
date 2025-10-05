@@ -5,6 +5,7 @@ clear = lambda: os.system('cls')
 
 
 gracz = Gracz("Gracz")
+przeciwnik = Przeciwnik()
 gra = True
 
 while gra:
@@ -14,7 +15,6 @@ while gra:
             if randint(0,1) == 0:
                 print(f"{gracz.nazwa} znalazł jaskinię")
             else:
-                przeciwnik = Przeciwnik()
                 print(f"{gracz.nazwa} natrafił na {przeciwnik.nazwa}")
                 gra = gracz.walka(przeciwnik)
         case "odpocznij":
