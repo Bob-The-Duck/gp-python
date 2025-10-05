@@ -1,8 +1,9 @@
-from random import randint,choice
+from random import *
 import time
 import os
 clear = lambda: os.system('cls')
 
+nazwy = ["Gerald", "Kvpsztalek", "Zombie","Brajanusz", "Bobik"]
 class Postac:
     def __init__(self):
         self.nazwa = ""
@@ -11,21 +12,11 @@ class Postac:
         
     def atakuj(self,przeciwnik):
         atak = randint(0,3)
-        
         if atak == 0:
             print(f"{przeciwnik.nazwa} Unika ataku {self.nazwa} (,ponieważ wypił duzo trunku)")
-            
         else:
             print(f"Weszło jak w masło {przeciwnik.nazwa} (-{atak}) oberwał od {self.nazwa}")
-            przeciwnik.nazwa -= atak
-            
-            
-class Przeciwnik(Postac):
-    def __init__(self,gracz):
-        super().__init__()
-        self.nazwa = choice("Gerald", "Kvpsztalek", "Zombie","Brajanusz", "Bobik")
-        self.zycie = randint(1,(gracz.max_zycie + 2))
-        
+            przeciwnik.nazwa =- atak
 class Gracz(Postac):
     def __init__(self,gracz):
         super().__init__()
@@ -46,7 +37,7 @@ class Gracz(Postac):
         while walka:
             print(f"życie: {self.zycie}/{self.max_zycie}")
             print(f"Życie przeciwnikak: {przeciwnik.nazwa}: {przeciwnik.zycie}")
-            akcja_walki = input("Co zrobić: Atakować, Uciekać albo na browara z przeciwnikiem komeda to Browar (ryzykowne 50/50, jak się uda to +10 max życia, a jak nie to umierasz :) ")
+            akcja_walki = input("Atak/Uciekaj/Negocjuj")
             match (akcja_walki):
                 case "Atak":
                     self.atakuj(przeciwnik)
@@ -71,4 +62,10 @@ class Gracz(Postac):
                 print(f"{self.nazwa} jest bambikiem i wywalił sie za zero")
                 return False
         return True
-                    
+                                
+            
+class Przeciwnik(Postac):
+    def __init__(self):
+        super().__init__()
+        self.nazwa = nazwy[randint(0,len(nazwy))]
+        self.zycie = randint(5,15)   
