@@ -19,19 +19,19 @@ class Element():
             self.wybrany = 0
     def wybranyObraz(self):
         return self.lista_obrazow[self.wybrany].obraz
-    
-class NakrycieGlowy(Element):
-    def __init__():
-        super().__init__('head')
 
 class NakrycieGlowy(Element):
-    def __init__():
+    def __init__(self):
+        super().__init__('head')
+
+class Ubranie(Element):
+    def __init__(self):
         super().__init__('body')
 
 class Oczy(Element):
-    def __init__():
+    def __init__(self):
         super().__init__('eye')
 
 class Bron(Element):
-    def __init__():
-        super().__init__('wepon')
+    def __init__(self):
+        super().__init__('weapon')
